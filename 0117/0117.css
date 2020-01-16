@@ -1,0 +1,60 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.middle{
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    position: absolute;
+}
+.btn{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    border-radius: 30%;
+    margin: 10px;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #FF8C00;
+    overflow: hidden;
+    position: relative;
+}
+.btn i {
+    line-height: 90px;
+    font-size: 26px;
+}
+.btn:hover i{
+    transform: scale(1.2);
+    color: #f1f1f1;
+    transition: 0.2s;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #FF8C00;
+    transform: rotate(45deg); 
+    left: -110%;
+    top: 90%;
+}
+.btn:hover::before{
+    animation: btnhover 0.5s;
+    top: -10%;
+    left: -10%;
+}
+@keyframes btnhover {
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
