@@ -9,5 +9,5 @@ https://winniexx0918.github.io/learn-css-animation/0117/buttons-hover.html <br>
 `transform、transition、animation、@Keyframes`
 
 * 0204-霓虹動畫按鈕hover效果。<br>
-https://winniexx0918.github.io/learn-css-animation/0/neon_button_effects_hover.html <br>
+https://winniexx0918.github.io/learn-css-animation/0204/neon_button_effects_hover.html <br>
 `filter、box-reflect、transform、transition、animation、@Keyframes`
