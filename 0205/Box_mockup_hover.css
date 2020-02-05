@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+.wrapper{
+    height: 600px;
+    max-width: 1400px;
+    overflow: hidden;
+}
+/* 調整排列 */
+.center {
+    display: flex;
+}
+.center:nth-child(1){
+   margin: -400px 0 400px 100px; 
+}
+.center:nth-child(2){
+    margin: -680px 0 115px 40px;
+}
+.center:nth-child(3){
+    margin: -400px 0 0 0px;
+}
+.center .box:nth-child(2){
+    margin: 120px 0 0 0;
+}
+.center .box:nth-child(3){
+    margin: 250px 0 0 0;
+}
+.center .box:nth-child(4){
+    margin: 380px 0 0 0;
+}
+.center .box:nth-child(5){
+    margin: 510px 0 0 0;
+}
+/* iphone 3d透視角度 */
+.box{
+    position: relative;
+    width: 240px;
+    height: 130px;
+    transform: perspective(500px) rotate(-40deg) skew(25deg);
+    box-shadow: -65px 55px 10px rgba(0, 0, 0, .3);
+    background: #fff url(image/iphone-color.jpg);
+    background-size: 210px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: 0.5s;
+}
+/* hover過去陰影漸漸模糊 */
+.box:hover {
+    transform: perspective(500px) rotate(-40deg) skew(25deg)
+                translate(50px,-50px);
+                box-shadow: -130px 100px 80px rgba(0, 0, 0, .3);
+}
+/* apple logo */
+.box::before {
+    content: "";
+    width: 65px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewY(-40deg) translate(-65px, -27px);
+    background: #e8e7ec url(image/apple.svg);
+    background-size: 27px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: 0.5s;
+}
+/* apple-iphone */
+.box::after {
+    content: "";
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: skewX(-50deg) translate(33px, 55px);
+    background: #e8e7ec url(image/iphone-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: 50% 50%;
+    transition: 0.5s;
+}
