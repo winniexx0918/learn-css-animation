@@ -15,3 +15,7 @@ https://winniexx0918.github.io/learn-css-animation/0204/neon_button_effects_hove
 * 0204-1-卡片hover 3D效果。<br>
 https://winniexx0918.github.io/learn-css-animation/0204-1/card_hover.html <br>
 `transform-style、backface-visibility、transform(perspective、rotate)、transition(ease-in-out)
+
+* 0205-盒模型hover 3D透視。<br>
+https://winniexx0918.github.io/learn-css-animation/0205/Box_mockup_hover.html <br>
+`nth-child(n)、transform(perspective、rotate、skew、translate)、::before、::after、transition、box-shadow
