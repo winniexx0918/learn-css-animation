@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Muli', sans-serif;
+    background: #696969;
+}
+/* 使容器裡的兩個區塊自行換行 */
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    margin: 20px;
+}
+/* img區塊 */
+.container .imgBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background: #FFF0F5;
+}
+/* 長出nike字樣 */
+.container .imgBox::before{
+    content: "Nike";
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 8em;
+    opacity: 0.1;
+    color: #E9967A;
+    font-weight: 800;
+}
+/* 將照片向左移 */
+.imgBox img {
+    width: 700px;
+    position: relative;
+    transform: rotate(-30deg);
+    left: -50px;
+    transition: 1s;
+}
+.textarea {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.textarea h2 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 2.5em;
+    line-height: 0.8em;
+    color: #696969;
+}
+.textarea h2 span {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ccc;
+}
+.textarea p {
+    line-height: 24px;
+    font-weight: 200;
+    max-width: 85%;
+    margin-left: 15%;
+    font-size: 16px;
+    color: #696969;
+}
+.textarea h3{
+    margin: 0;
+    font-size: 2.5em;
+    color: #696969;
+    float: left;
+}
+.textarea button{
+    background: #E9967A;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 50px;
+    float: right;
+    cursor: pointer;
+}
+@media (max-width: 1080px){
+    .container {
+        height: auto;
+    }
+    .imgBox {
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .imgBox img {
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+        transition: 1.5s;
+    } 
+    .textarea {
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+    }
+    .textarea p {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
