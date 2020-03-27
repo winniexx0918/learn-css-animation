@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
 }
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
 .all{
-    width: 1440px;
+    /* width: 1440px; */
     background-image: url(image/img_hero.jpg);
     background-repeat: no-repeat;
-    background-position-y: 60px;
+    background-position: center;
+    background-position-y: 65px;
     height: 100vh;
 }
 .all::before{
@@ -14,13 +19,8 @@
     top: 0;
     height: 48px;
     background: #4F4D53;
-    
 }
-.wrapper{
-    width: 960px;
-    margin: 0 auto;
-}
-nav div{
+.logo div{
     background: #4F4D53;
     width: 960px;
     margin: 0 auto;
@@ -37,16 +37,12 @@ h1{
     font-size: 100px;
     color: #4F4D53;
     height: 500px;
-    line-height: 400px;
+    line-height: 500px;
 }
 h2{
     font-size: 64px;
     color: #E8BE02;
     margin: 50px 0;
-}
-h3{
-    font-size: 20px;
-    color: #E8BE02;
 }
 p{
     font-size: 20px;
