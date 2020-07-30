@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(130deg,#00FFFF,#8A2BE2);
+}
+.login-form{
+    width: 25em;
+    height: 35em;
+    background: #f1f1f1f1;
+    padding: 5em 3em;
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login-form h1{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.txtb{
+    border-bottom: 2px solid #ccc;
+    margin: 2.6em 0;
+    position: relative;
+    font-weight: lighter;
+}
+.txtb input{
+    font-size: 1em;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 .3em;
+    height: 1.8em;
+}
+.txtb span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: .3em;
+    color: #ccc;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+}
+.txtb span::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(130deg,#00FFFF,#8A2BE2);
+    transition: .5s;
+}
+.focus + span::before{
+    top: -.6em;
+}
+.focus + span::after{
+    width: 100%;
+}
+.logbtn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(130deg,#00FFFF,#8A2BE2,#00FFFF);
+    font-size: 1em;
+    color: #fff;
+    letter-spacing: .1em;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+    background-size: 200%;
+    border-radius: 10em;
+    margin-top: 4em;
+}
+.logbtn:hover{
+    background-position: right;
+}
+.bottom-text{
+    margin-top: 50px;
+    font-size: .8em;
+    text-align: center;
+    font-weight: lighter;
+}
